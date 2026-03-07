@@ -1,25 +1,31 @@
-import
+const { palavrasSorteio, palavrasChute } = require("./dicionario.js")
 
+function compararPalavras() {
+    const chuteArray = chute.split('')
+    // esse split divide uma string em parte e retorna um array
+    //  tipo a palavra gato, ele retorna g,a,t,o
+    const secretaArray = secreta.split('')
+    let resultado = new Array(5)
 
-
-function compararPalavras(palavrasSorteio, palavrasChute) {
-
-    for (let i = 0; i < palavrasSorteio.length; i++) {
-
-        if (palavrasChute[i] === palavrasSorteio[i]) {
-            console.log(palavrasChute[i] + " correta");
+    for (let i = 0; i < 5; i++) {
+        if (chuteArray[i] === secretaArray[i]) {
+            resultado[i] = "✅"
+            secretaArray[i] = null //esse null marca as letras que ja foram usadas
         }
-
-        else if (palavrasSorteio.includes(palavrasChute[i])) {
-            console.log(palavrasChute[i] + " existe mas em outra posição");
-        }
-
-        else {
-            console.log(palavrasChute[i] + " não existe");
-        }
-
+    }
+    for (let i = 0; i < 5; i++) 
+    {
+        if (resultado === "✅") continue // esse continue só continua mesmo, dependendo do for🙏
     }
 
+    const indexSecreta = secretaArray.indexOf(chuteArray[i])
+    if (indexSecreta !== -1) {
+        resultado[i] = "⚠"
+        secretaArray[indexSecreta] = null
+    } else {
+        resultado[i] = "⬛"
+    }
+    return resultado.join(' ') //esse join pega um array e junta numa string colocando espaco, o que ra g,a,t,o vira g a t o. coisa de maluco.
 }
 
-compararPalavras();
+module.exports = { compararPalavras }
