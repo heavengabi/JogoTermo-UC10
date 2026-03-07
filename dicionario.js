@@ -1,9 +1,9 @@
 
 //aqui são as palavras que vao ser sorteadas pro cara que ta jogando :P
 
-export const palavrasSorteio = ["arcar", "artes", "atriz", "atras", "avós", "bolas", "basta",
+const palavrasSorteio = ["arcar", "artes", "atriz", "atras", "avós", "bolas", "basta",
     "briga", "beijo", "bicar", "corte", "casar", "carro", "casca", "cerca", "caldo",
-    "dedar", "dores",
+    "dedar", "dores","raios",
     "doida", "falar", "festa", "fazer", "facil", "fugir", "gente", "gosto", "garra",
     "girar", "gordo", "habil", "haver", "hifen", "heroi", "haste", "harpa", "iscas",
     "indio", "irmao", "ideal", "inicio", "jeito", "jogar", "jaspe", "jarra", "junto",
@@ -19,7 +19,7 @@ export const palavrasSorteio = ["arcar", "artes", "atriz", "atras", "avós", "bo
 
 //aqui fica as palavras que o usuario pode chutar, incluindo as do sorteio 
 
-export const palavrasChute = 
+const palavrasChute = 
 [
     "arcar", "artes", "atriz", "atras", "avós", "bolas", "basta", "briga",
     "beijo", "bicar", "corte", "casar", "carro", "casca", "cerca", "caldo", "dedar", "dores",
@@ -42,4 +42,8 @@ export const palavrasChute =
     "otica", "oxida", "pardo", "pavor", "pilar", "pobre", "pular", "quiz", "quipa", "raiar",
     "reler", "rigor", "rimel", "roseo", "sabia", "sadio", "salmo", "salmo", "sapos", "sogra",
     "sogro", "tacho", "tempo", "tonto", "tonto", "truco", "troca", "troco", "ulema", "umbral",
-    "urano", "ursos", "xibiu", "xingu", "zanga", "zumbi"]
+    "urano", "ursos", "xibiu", "xingu", "zanga", "zumbi","raios"]
+
+
+    //isso aqui é pra mim poder usar esse dicionario em outros arquivos
+    module.exports = {palavrasChute, palavrasSorteio}
