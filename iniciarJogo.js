@@ -1,22 +1,22 @@
-const escolherPalavraSecreta = require("./escolherPalavraSecreta.js")
-const validarPalpite = require("./validarPalpite.js")
-const compararPalavras = require("./CompararPalavras.js")
+const {sortearPalavra} = require("./sortearPalavras.js")
+const {validarPalpite} = require("./validarPalpite.js")
+const {compararPalavras} = require("./CompararPalavras.js")
 const rl = require('readline-sync');
 //isso ai sao as importacoes pra essa funcao funcionar
-
 
 function iniciarJogo() {
 
     console.log("Iniciando o jogo")
 
-    const palavraSecreta = escolherPalavraSecreta()
+    const palavraSecreta = sortearPalavra()
     let tentativas = 0 // isso aqui é pra iniciar o jogo com 0 tentativas
     let acertou = false
     const historico = [] //esse array ele guarda todoas as tentativas do jogador, por isso começa vazio
     while (tentativas < 6 && !acertou) {
         console.log(`Tentativa: ${tentativas + 1} /6`) // aqui ele mostra o numero de tentativas 
-        let palpite = rl.question("Digite uma palavra.").toLowerCase // pra digitar a palavra e se escrever em capslock ela vira caixa baixa😺
-        if (!validarPalpite(validarPalpite)) {
+        let palpite = rl.question("Digite uma palavra.").toLowerCase() // pra digitar a palavra e se escrever em capslock ela vira caixa baixa😺
+        if (!validarPalpite(palpite)) 
+        {
             console.log("Palpite inválido. Tente novamente.")
             continue // volta pro começo
 

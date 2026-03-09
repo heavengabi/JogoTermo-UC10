@@ -1,5 +1,5 @@
 
-
+const {palavrasSorteio} = require ("./dicionario.js")
 
 function sortearPalavra()
 {
