@@ -1,7 +1,5 @@
-import { palavrasChute } from "./dicionario";
 
-
-export function validarPalpite(palpite) 
+ function validarPalpite(palpite) 
 {
     if(palpite.length !== 5) 
     {
@@ -25,3 +23,5 @@ export function validarPalpite(palpite)
 
    return true;
 }
+
+module.exports = { validarPalpite }
