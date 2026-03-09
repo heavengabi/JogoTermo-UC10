@@ -12,7 +12,7 @@ function criarMenu() {
     console.log("==============================")
     
     var opcao = parseInt(rl.question("\nEscolha uma opcao: "));
-    while(opcao !== 4){
+    while(opcao !== 3){
         if(opcao === 1) {
             console.log("Iniciando o jogo...");
             // em desenvolvimento;
