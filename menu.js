@@ -1,5 +1,6 @@
 // cria um menu para um jogo de termo game direto no terminal node js 
 const rl = require('readline-sync');
+const {iniciarJogo} = require ("./iniciarJogo.js")
 
 function criarMenu() {
        // Cria o elemento do men
@@ -14,8 +15,7 @@ function criarMenu() {
     var opcao = parseInt(rl.question("\nEscolha uma opcao: "));
     while(opcao !== 3){
         if(opcao === 1) {
-            console.log("Iniciando o jogo...");
-            // em desenvolvimento;
+            iniciarJogo();
             return;
         }else if(opcao === 2) {
             console.clear();

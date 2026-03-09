@@ -1,5 +1,7 @@
 
- function validarPalpite(palpite) 
+const {palavrasChute} = require ("./dicionario.js")
+
+function validarPalpite(palpite) 
 {
     if(palpite.length !== 5) 
     {
