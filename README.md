@@ -1,6 +1,6 @@
-##  TermosGame 
+##  Termo
 
-O **TermosGame** é um jogo em desenvolvimento que pode ser executado diretamente pelo terminal do **VS Code**.  
+O **Termo** é um jogo em desenvolvimento que pode ser executado diretamente pelo terminal do **VS Code**.  
 A proposta do jogo é oferecer uma experiência de **caça-palavras interativo**, utilizando lógica e raciocínio para que o jogador encontre as palavras corretas.
 
 O jogo foi pensado para ser **simples, criativo e fácil de jogar**, incentivando o pensamento crítico e a atenção do jogador durante cada rodada.
@@ -23,6 +23,11 @@ Este projeto também tem como objetivo praticar conceitos de **programação e l
 - VS Code
 - Terminal 
 
+## Dependencias necessárias 
+instale no seu terminal
+```npm i readline-sync```
+
+
 ## Como Executar
 
 1. Clone o repositório: https://github.com/heavengabi/TermoGame-UC10.git
@@ -37,11 +42,11 @@ cd TermosGame-UC10
 4. Execute o jogo no terminal:
 node jogo.js
 
-   ```node jogo.js```
+   ```node menu.js```
 
 
 
 
 ## Desenvolvido por:
 
-Projeto desenvolvido por **Gabriela dos santos, Miguel Vargas Ferreira e Eduardo S Lopez**.
+Projeto desenvolvido por **Gabriela Silva da Rosa, Miguel Vargas Ferreira e Eduardo S Lopez**.
