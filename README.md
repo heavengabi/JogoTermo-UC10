@@ -23,6 +23,11 @@ Este projeto também tem como objetivo praticar conceitos de **programação e l
 - VS Code
 - Terminal 
 
+## Dependencias necessárias 
+instale no seu terminal
+```npm i readline-sync```
+
+
 ## Como Executar
 
 1. Clone o repositório: https://github.com/heavengabi/TermoGame-UC10.git
